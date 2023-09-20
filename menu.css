@@ -1,0 +1,115 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles for the whole page */
+body {
+    background-color: #f0f0f0; /* Light pencil grayish background color */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    /* Dark gray background for the header */
+    text-align: center; /* Center-align the content within the header */
+    padding: 20px 0; /* Add padding to the top and bottom for spacing */
+}
+
+/* Center-align the img tag within the header */
+header img {
+    display: block; /* Ensure the image is centered as a block element */
+    margin: 0 auto; /* Center horizontally */
+    max-width: 50%;
+}
+
+/* Navigation Menu Styles */
+nav {
+    background-color: #333; /* Dark gray background */
+    border-radius: 18px; /* Rounded corners */
+    padding: 10px; /* Add some padding for better spacing */
+    margin: 25px;
+    text-align: center; /* Center-align the items */
+}
+
+/* Center-align the logo */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next row/column */
+}
+
+nav li {
+    margin: 5px; /* Add spacing between items */
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ddd; /* Grayish text color */
+    padding: 10px 15px;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav li a:hover {
+    color: #fff; /* White text color on hover */
+}
+
+/* Section with Menu Items Styles */
+main {
+    padding: 25px;
+}
+
+.menu-section {
+    text-align: center;
+}
+
+.menu-item {
+    background-color: #ffe5b49d; /* Light pink candy color */
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.menu-item h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.menu-item p {
+    margin: 10px 0;
+}
+
+.menu-item span {
+    font-weight: bold;
+}
+
+/* Line Before Footer Styles */
+.line-before-footer {
+    border-top: 1px solid #ddd; /* Create a horizontal line */
+    margin-top: 25px; /* Add margin for spacing */
+}
+
+/* Footer Styles */
+footer {
+    padding: 10px; /* Add padding for spacing */
+    display: flex;
+    justify-content: space-between; /* Space the two elements apart */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for the left side of the footer */
+.footer-left img {
+    max-width: 10%; /* Ensure the image is responsive */
+    height: auto;
+    display: block; /* Ensure the image is centered as a block element */
+}
+
+/* Styles for the right side of the footer */
+.footer-right {
+    color: #333; /* Text color */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}

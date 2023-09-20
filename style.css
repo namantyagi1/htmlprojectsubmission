@@ -1,0 +1,193 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles for the whole page */
+body {
+    background:(to top, #ffffff99, #f0f0f0); /* White to slightly shaded background */
+    font-family: Arial, sans-serif;
+}
+header {
+     /* Dark gray background for the header */
+     text-align: center; /* Center-align the content within the header */
+    padding: 20px 0; /* Add padding to the top and bottom for spacing */
+}
+
+/* Center-align the img tag within the header */
+header img {
+    display: block; /* Ensure the image is centered as a block element */
+    margin: 0 auto; /* Center horizontally */
+    max-width: 50%;
+}
+/* Navigation Menu Styles */
+nav {
+    background-color: #333; /* Dark gray background */
+    border-radius: 18px; /* Rounded corners */
+    padding: 10px; /* Add some padding for better spacing */
+   margin: 25px;
+    text-align: center; /* Center-align the items */
+}
+
+/* Center-align the logo */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap; /* Allow items to wrap to the next row/column */
+}
+
+nav li {
+    margin: 5px; /* Add spacing between items */
+}
+
+nav li a {
+    text-decoration: none;
+    color: #ddd; /* Grayish text color */
+    padding: 10px 15px;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav li a:hover {
+    color: #fff; /* White text color on hover */
+}
+
+/* Media Query for Tablet and Mobile Screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+    }
+}
+/* Section with Image Background Styles */
+main section {
+    padding: 25px ;
+    border-radius: 18px;
+}
+.image-section {
+    height: 150px; /* Set the height of the section */
+    position: relative;
+    border-radius: 18px;
+    /* Position for overlay content */
+}
+
+/* Image Styles */
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section with the image */
+    border-radius: 15px;
+}
+
+/* Overlay Styles */
+section div {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 88.2%; /* Cover the entire width of the img */
+    height: 110px; /* Cover the entire height of the img */
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black or grayish overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+}
+
+.image-overlay h1 {
+    font-weight: bold;
+    margin: 0;
+    padding: 15px;
+}
+
+.image-overlay p {
+    margin: 50;
+    padding: 15px;
+
+}
+
+
+
+
+/* Line Before Footer Styles */
+.line-before-footer {
+    border-top: 1px solid #ddd; /* Create a horizontal line */
+    margin-top: 25px; /* Add margin for spacing */
+}
+
+/* Footer Styles */
+footer {
+   
+    padding: 25px; /* Add padding for spacing */
+    display: flex;
+   
+    justify-content: space-between; /* Space the two elements apart */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styles for the left side of the footer */
+.footer-left img {
+    max-width: 10%; /* Ensure the image is responsive */
+    height: auto;
+    display: block; /* Ensure the image is centered as a block element */
+}
+
+/* Styles for the right side of the footer */
+.footer-right {
+    color: #333; /* Text color */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+/* Three Article Sections Styles */
+.articles-container {
+    display: flex;
+    justify-content: space-between; /* Space the articles evenly */
+    align-items: center; /* Center the articles vertically */
+    flex-wrap: wrap; /* Allow articles to wrap on smaller screens */
+    padding: 25px;
+
+}
+.first-article {
+    background: #FFE5B4;
+    flex-grow: 1; /* Allow the middle article to take up available space and be centered */
+    margin: 0 10px; /* Add margin for spacing */
+    max-width: calc(33.33% - 20px); /* Limit the width of each article with spacing */
+}
+
+/* Style for the middle article */
+.middle-article {
+    background: #FFE5B4;
+    flex-grow: 1; /* Allow the middle article to take up available space and be centered */
+    margin: 0 10px; /* Add margin for spacing */
+    max-width: calc(33.33% - 20px); /* Limit the width of each article with spacing */
+}
+.third-article {
+    background: #FFE5B4;
+
+    flex-grow: 1; /* Allow the middle article to take up available space and be centered */
+    margin: 0 10px; /* Add margin for spacing */
+    max-width: calc(33.33% - 20px); /* Limit the width of each article with spacing */
+}
+
+/* Style for all articles */
+.article {
+    flex-grow: 1;
+    margin: 0 10px;
+    max-width: calc(33.33% - 20px);
+    background-color: #FFE5B4; /* Light pink candy color */
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+}
+
+/* Adjust the height of all articles */
+.article {
+    height: calc(2 * 150px); /* Twice the height of the first article (150px) */
+}
+/* Individual Article Styles */
